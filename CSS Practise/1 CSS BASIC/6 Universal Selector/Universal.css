@@ -1,0 +1,5 @@
+/* here we use universal selector which is used to select all the text in one frame */
+
+* {
+    color: red;
+}
