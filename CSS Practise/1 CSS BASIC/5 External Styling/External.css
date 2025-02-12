@@ -1,0 +1,7 @@
+/* here we will perform external CSS which is link in the html c0de and used in another tab */
+.Name{
+    color: blueviolet;
+}
+.para {
+    color: rgb(67, 23, 169);
+}
