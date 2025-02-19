@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    color: blue;
+    background-color: red;
+}
+
+#box1 {
+    width: 50vw; /* Box ki width */
+    height: 20vh; /* Box ki height */
+    background-color: red;
+    display: flex;
+    justify-content: center; /* Text ko horizontally center karega */
+    align-items: center; /* Text ko vertically center karega */
+    color: rgb(0, 239, 76);
+    font-size: 40px;
+}
+
+#box2 {
+    width: 50vw; /* Box ki width */
+    height: 20vh; /* Box ki height */
+    background-color: rgb(45, 23, 156);
+    display: flex;
+    justify-content: center; /* Text ko horizontally center karega */
+    align-items: center; /* Text ko vertically center karega */
+    color: rgb(251, 255, 0);
+    font-size: 40px;
+}
+
+#box3 {
+    width: 50vw; /* Box ki width */
+    height: 20vh; /* Box ki height */
+    background-color: rgb(0, 106, 255);
+    display: flex;
+    justify-content: center; /* Text ko horizontally center karega */
+    align-items: center; /* Text ko vertically center karega */
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
