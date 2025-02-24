@@ -1,0 +1,13 @@
+/* changing the back of these three paragraphs */
+
+.para1 {
+    background-color: red;
+}
+
+.para2 {
+    background-color: blue;
+}
+
+.para3 {
+    background-color: greenyellow;
+}
