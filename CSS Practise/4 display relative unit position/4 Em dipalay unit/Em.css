@@ -1,0 +1,11 @@
+.container {
+    background-color: chartreuse;
+    height: 100px;
+    width: 600px;
+    font-size: 25px;
+}
+
+.box {
+    background-color: yellow;
+    font-size: 2em;
+}
