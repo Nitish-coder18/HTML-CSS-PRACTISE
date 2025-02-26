@@ -1,0 +1,24 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    margin: 10px;
+    font-size: 35px;
+}
+
+.viewheight {
+    background-color: cyan;
+    height: 80vh;
+}
+
+.viewwidth {
+   background-color: rgb(204, 18, 142);
+   width: 30vh;
+}
