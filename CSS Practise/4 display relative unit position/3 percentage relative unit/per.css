@@ -1,25 +1,25 @@
-.box {
+.container {
     background-color: rgba(255, 251, 0, 0.932);
-    height: 600px;
+    height: 400px;
     width: 500px;
 }
 
-.box1 {
+/* .box1 {
     background-color: burlywood;
     height: 10%;
 }
-
+*/
 .box2 {
     background-color: aqua;
-    height: 10%;
+    height: 40%;
 }
 
-.box3 {
+ .box3 {
     background-color: blueviolet;
-    height: 10%;
+    height: 30%;
 }
 
 .box4 {
     background-color: chartreuse;
     height: 10%;
-}
+} 
