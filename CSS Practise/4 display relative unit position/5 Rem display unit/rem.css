@@ -1,0 +1,13 @@
+.container {
+    height: 200px;
+    width: 200px;
+    background-color: coral;
+    font-size: 10px;
+}
+
+.box {
+    background-color: rgb(154, 174, 21);
+    width: 70%;
+    height: 50%;
+    font-size: 2rem;
+}
