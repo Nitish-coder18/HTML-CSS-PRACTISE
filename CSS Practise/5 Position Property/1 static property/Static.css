@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+  }
+  
+  .box2 {
+    background-color: rgb(69 164 181);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+  }
+
+  .box2:hover {
+    width: 800px;
+
+  }
+  
