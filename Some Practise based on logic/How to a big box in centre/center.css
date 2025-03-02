@@ -1,13 +1,21 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .container {
-
+    border: 5px dotted red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .box {
-margin: 10px;
+margin: 19px;
+
 }
 
 .box1 {
