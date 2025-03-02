@@ -4,7 +4,6 @@
     overflow: hidden;
 }
 .container {
-    border: 5px dotted red;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
