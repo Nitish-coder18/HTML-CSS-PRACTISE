@@ -20,6 +20,9 @@ margin: 19px;
 }
 
 .box1 {
+    background-color: brown;
+    border: 2px solid black;
+    border-bottom: hidden;
 
 }
 
