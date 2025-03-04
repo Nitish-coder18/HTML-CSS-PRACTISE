@@ -10,4 +10,10 @@
     font-size: 25px;
     padding: 20px;
     box-sizing: border-box;
+    font-weight: 700;
+}
+
+.image {
+    background-image: url(assets/myntra.svg);
+    width: 38px;
 }
