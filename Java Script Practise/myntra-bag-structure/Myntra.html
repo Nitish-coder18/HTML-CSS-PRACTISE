@@ -6,15 +6,26 @@
 </head>
 <body>
     <div class="dabba">
-    <button id="AddToBag" class="box bx" > Add To Bag </button>
-    <button id="AddToBag2"> ❤️ Move to wishlist </button>
-    <button id="AddToBag3" class="box bx"> Add 1+1 sale item </button>
+    <button id="AddToBag" class="box bx" onclick="
+        Bag++;
+        document.querySelector('#HeadingContent').innerHTML = 'Your Bag has ' + Bag + ' items.';
+        " > Add To Bag </button>
+
+    <button id="AddToBag2" onclick="
+    Bag--;
+    document.querySelector('#HeadingContent').innerHTML = 'Your Bag has ' + Bag + ' items.';
+    " > ❤️ Move to wishlist </button>
+
+    <button id="AddToBag3" class="box bx" onclick="
+        Bag = Bag+2;
+        document.querySelector('#HeadingContent').innerHTML = 'Your Bag has ' + Bag + ' items.';
+        "> Add 1+1 sale item </button>
 </div>
     <h1 id="HeadingContent"></h1>
 </body>
 
 <script>
     let Bag = 0;
-    document.querySelector("HeadingContent").innerHTML = 'Your Bag has ' + Bag + 'items.'
+    document.querySelector("#HeadingContent").innerHTML = 'Your Bag has ' + Bag + ' items.';
 </script>
 </html>
