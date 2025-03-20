@@ -8,4 +8,4 @@ console.log(`Double quotes : ${str1}, Single Quotes : ${str2}, Using Backtick: $
 
 // concatenate string with string and string with number
 console.log("Nitish Dwivedi" + "5");
-console.log("Nitish Dwivedi" - 5);
+console.log("Nitish Dwivedi" + 5);
