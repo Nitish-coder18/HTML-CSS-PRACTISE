@@ -9,7 +9,7 @@ let viewer =50;
 console.log (`the age of the viewer is: ${viewer} `);
 let day;
 
-if (viewer<13) {
+if (viewer< 13) {
     console.log('The viewer is under 18 so the ticket is free..!!');
 }
 
