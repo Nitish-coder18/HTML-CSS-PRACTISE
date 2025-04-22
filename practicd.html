@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Sakshi</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe4e6, #f0f9ff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .heart {
+      font-size: 3.5rem;
+      animation: float 3s ease-in-out infinite;
+      color: #ec4899;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    .main-message {
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-weight: bold;
+      color: #ec4899;
+      font-size: 1.6rem;
+    }
+
+    .button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 1rem;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2563eb;
+    }
+
+    .second-message {
+      margin-top: 25px;
+      font-size: 1rem;
+      color: #6b7280;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <div class="container">
+    <div class="main-message">
+      Sakshi, tum meri zindagi ki ek khoobsurat yaad ho. 
+      Chahe hum alag raste par ho, par meri dua hamesha tumhare saath hai.
+    </div>
+    <div class="name">- From Someone Who'll Always Care</div>
+    <button class="button" onclick="showMore()">Always Wishing You Happiness 😊</button>
+    <div class="second-message" id="secondMessage">
+      Tumhari har muskurahat ke liye dil se dua karta hoon. Khush raho, hamesha.
+    </div>
+  </div>
+
+  <script>
+    function showMore() {
+      document.getElementById('secondMessage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
