@@ -1,12 +1,12 @@
 import './App.css'
 import Heading from './components/Heading'
-
+import Paragraph from './components/paragraph'
 function App() {
   
   return (
     <>
       <Heading />
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur laudantium accusantium iusto expedita asperiores illo ipsam fugiat quo ducimus!</p>
+      <Paragraph />
       <button>click me!</button>
     </>
   )
