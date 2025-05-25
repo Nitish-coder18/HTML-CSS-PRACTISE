@@ -1,8 +1,7 @@
-import React from "react";
-import './Heading'
+import { Component } from "react";
 
 class Heading extends Component {
     render() {
-        return <h1 id="heading">My Name is Nitish Dwivedi</h1>
+        return  <h1 className='heading'>Hello My Name Is Nitish Dwivedi</h1>
     }
 }
