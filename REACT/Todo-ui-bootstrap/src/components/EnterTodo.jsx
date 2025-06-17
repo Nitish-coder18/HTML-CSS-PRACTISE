@@ -10,7 +10,7 @@ const EnterTodo = () => {
        <input type="Date" class="form-control"></input>
     </div>
     <div class="col col-lg-2">
-      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-success">Add</button>
     </div>
   </div>
 </div>
