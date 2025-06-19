@@ -1,16 +1,16 @@
-const Todoitem = () => {
-    return <div class="container text-center">
-    <div class="row justify-content-md-center">
+const Todoitem = ({id, todoText, todoDate}) => {
+    return <div className="container text-center">
+    <div className="row justify-content-md-center">
   </div>
-  <div class="row">
-    <div class="col text-truncate">
-        Buy Milk
+  <div className="row">
+    <div className="col text-truncate">
+        {todoText}
     </div>
-    <div class="col-md-auto">
-       06-June-2025
+    <div className="col-md-auto">
+        {todoDate}
     </div>
-    <div class="col col-lg-2">
-      <button type="button" class="btn btn-danger">Delete</button>
+    <div className="col col-lg-2">
+      <button type="button" className="btn btn-danger">Delete</button>
     </div>
   </div>
 </div>
