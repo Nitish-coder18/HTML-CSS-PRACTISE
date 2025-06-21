@@ -1,3 +1,4 @@
+import AppTitle from '../components/Title'
 import './App.css'
 
 function App() {
@@ -5,7 +6,10 @@ function App() {
 
   return (
     <>
-      <h1>Nitish Dwivedi</h1>
+      <center>
+      <AppTitle />
+
+    </center>
     </>
   )
 }
