@@ -1,5 +1,5 @@
 const EnterTodo = () => {
-    return <div class="container text-center">
+    return <div class="container ">
   <div class="row justify-content-md-center">
   </div>
   <div class="row">
@@ -10,7 +10,7 @@ const EnterTodo = () => {
        <input type="Date" class="form-control"></input>
     </div>
     <div class="col col-lg-2">
-      <button type="button" class="btn btn-success">Add</button>
+      <button type ="button" class="btn btn-success">Add</button>
     </div>
   </div>
 </div>
