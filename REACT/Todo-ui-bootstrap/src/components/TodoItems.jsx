@@ -11,6 +11,7 @@ const TodoItems = () => {
     {todoItems.map((item) => (
           <Todoitem
             key={item.id}
+            id={item.id}
             todoText={item.todoText}
             todoDate={item.todoDate}
           />
