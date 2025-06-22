@@ -1,5 +1,5 @@
 const EnterTodo = () => {
-    return <div class="container ">
+    return <div class="container  ">
   <div class="row justify-content-md-center">
   </div>
   <div class="row">

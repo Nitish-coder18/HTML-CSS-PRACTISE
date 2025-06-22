@@ -1,6 +1,8 @@
+import Button from "./Button";
+
 const Todoitem = ({id, todoText, todoDate}) => {
-    return <div className="container text-center">
-    <div className="row justify-content-md-center">
+    return <div className="container  ">
+    <div className="row justify-content-md-center ">
   </div>
   <div className="row">
     <div className="col text-truncate">
@@ -10,7 +12,7 @@ const Todoitem = ({id, todoText, todoDate}) => {
         {todoDate}
     </div>
     <div className="col col-lg-2">
-      <button type="button" className="btn btn-danger">Delete</button>
+      <Button />
     </div>
   </div>
 </div>
