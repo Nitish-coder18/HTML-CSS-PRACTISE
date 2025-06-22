@@ -1,6 +1,8 @@
+import Button from "./Button";
+
 const EnterTodo = () => {
-    return <div class="container  ">
-  <div class="row justify-content-md-center">
+    return <div class="container td-row">
+  <div class="row justify-content-md-center ">
   </div>
   <div class="row">
     <div class="col">
@@ -10,7 +12,7 @@ const EnterTodo = () => {
        <input type="Date" class="form-control"></input>
     </div>
     <div class="col col-lg-2">
-      <button type ="button" class="btn btn-success">Add</button>
+      <Button btnType='success' btnText='add' />
     </div>
   </div>
 </div>

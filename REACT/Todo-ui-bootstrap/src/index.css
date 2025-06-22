@@ -1,4 +1,8 @@
-.todo {
-    margin: 10px;
-    text-align: start;
+.button {
+   min-width: 80px; 
+}
+
+.td-row {
+    margin-bottom: 10px;
+    text-align: left;
 }
