@@ -8,7 +8,7 @@ const Todoitem = ({id, todoText, todoDate}) => {
     <div className="col text-truncate">
         {todoText}
     </div>
-    <div className="col-md-auto td-row">
+    <div className="col-md-auto td-row date">
         {todoDate}
     </div>
     <div className="col col-lg-2">

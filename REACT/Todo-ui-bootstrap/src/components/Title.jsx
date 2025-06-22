@@ -1,5 +1,5 @@
 const TodoName = () => {
-    return <h1>Todo App</h1>
+    return <h1 className="Title">Todo App</h1>
 }
 
 export default TodoName;
