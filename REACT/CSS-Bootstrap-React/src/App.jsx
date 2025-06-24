@@ -1,11 +1,13 @@
 import './App.css'
+import FontColor from './Components/FontColor';
 
 function App() {
   
 
   return (
     <>
-      <h1>Nitish Dwivedi</h1>
+      <FontColor name = "Ritik Dwivedi" />
+      
     </>
   )
 }
