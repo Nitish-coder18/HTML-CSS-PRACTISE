@@ -1,11 +1,12 @@
 import './App.css'
+import Title from './Components/title'
 
 function App() {
  
-
   return (
     <>
-      <h1>Nitish Dwivedi</h1>
+      <Title text= 'Student Details Form'/>
+
     </>
   )
 }
