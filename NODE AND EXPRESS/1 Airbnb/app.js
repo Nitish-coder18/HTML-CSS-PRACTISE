@@ -21,8 +21,7 @@ app.use("/host", hostRouter);
 
 app.use((req, res, next) => {
   res.statusCode = 404;
-  res.sendFile(path.join(__dirname, "Views", "404.html"));
-  res.end();
+  res.sendFile(path.join(rootDir, "Views", "404.html"));
 })
 
 const PORT = 3002;
