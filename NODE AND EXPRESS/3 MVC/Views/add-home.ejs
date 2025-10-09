@@ -1,0 +1,54 @@
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="./publicstyles/output.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-white to-blue-100 min-h-screen flex flex-col items-center justify-center text-gray-800">
+
+  <h1 class="text-4xl font-bold text-rose-600 mb-8">Add Your Home</h1>
+
+  <form action="/host/add-home" method="POST" class="bg-white p-8 rounded-2xl shadow-lg w-80 flex flex-col gap-5">
+    <input
+      type="text"
+      name="houseName"
+      placeholder="Name of your house"
+      class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+    />
+
+        <input
+      type="text"
+      name="price"
+      placeholder="Per day rent of your home"
+      class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+    />
+
+        <input
+      type="text"
+      name="location"
+      placeholder="where is your home"
+      class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+    />
+
+        <input
+      type="text"
+      name="rating"
+      placeholder="rating of the house"
+      class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+    />
+
+    <input
+      type="text"
+      name="photoUrl"
+      placeholder="upload a Photo"
+      class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rose-400"
+    />
+
+
+    <input
+      type="submit"
+      value="Add Home"
+      class="bg-rose-500 text-white font-semibold py-2 rounded-lg hover:bg-rose-600 transition-all cursor-pointer"
+    />
+  </form>
+
+</body>
+</html>
