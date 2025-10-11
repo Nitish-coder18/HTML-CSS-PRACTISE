@@ -1,0 +1,92 @@
+<%- include('../partials/head') %>
+<link rel="stylesheet" href="/styles/output.css">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-pink-200 via-rose-100 to-blue-200 text-gray-900">
+
+  <!-- Page Wrapper -->
+  <main class="py-14 px-6">
+    <div class="container mx-auto max-w-6xl">
+
+      <!-- Outer Card -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border border-white/40 relative">
+
+        <!-- Decorative Background Glow -->
+        <div class="absolute -top-16 -left-16 w-64 h-64 bg-pink-400/30 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-blue-400/30 rounded-full blur-3xl animate-pulse"></div>
+
+        <!-- Header Image -->
+        <div class="relative h-[550px]">
+          <img src="<%= home.photoUrl %>" alt="<%= home.houseName %>" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+
+          <!-- Overlay Info -->
+          <div class="absolute bottom-10 left-10">
+            <h1 class="text-6xl font-extrabold text-white mb-4 drop-shadow-lg tracking-tight">
+              <%= home.houseName %>
+            </h1>
+            <div class="flex items-center gap-6 text-white text-xl font-medium">
+              <p>⭐ <span class="ml-2"><%= home.rating %> / 5</span></p>
+              <p>📍 <span class="ml-2"><%= home.location %></span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-12 relative z-10">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
+            <h2 class="text-4xl font-extrabold bg-gradient-to-r from-indigo-600 to-rose-500 bg-clip-text text-transparent">
+              Property Details
+            </h2>
+            <span class="text-4xl font-bold text-indigo-600 mt-4 md:mt-0">
+              ₹<%= home.price %> <span class="text-lg text-gray-600 font-normal">/ night</span>
+            </span>
+          </div>
+
+          <!-- Info Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Description Section -->
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Description</h3>
+              <p class="text-gray-700 leading-relaxed text-lg">
+                Experience the elegance and comfort of <%= home.houseName %>, a luxurious stay nestled in 
+                <span class="font-semibold text-indigo-600"><%= home.location %></span>. 
+                With a high rating of <%= home.rating %>/5, it offers you a peaceful retreat blended with modern luxury.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div>
+              <h3 class="text-2xl font-semibold text-gray-800 mb-3">Features</h3>
+              <ul class="space-y-3 text-gray-700 text-lg">
+                <li class="flex items-center gap-3"><span class="text-indigo-500 text-xl">🏠</span> Spacious Rooms</li>
+                <li class="flex items-center gap-3"><span class="text-indigo-500 text-xl">🌆</span> Prime City Location</li>
+                <li class="flex items-center gap-3"><span class="text-indigo-500 text-xl">💎</span> Premium Interiors</li>
+                <li class="flex items-center gap-3"><span class="text-indigo-500 text-xl">🌿</span> Calm Environment</li>
+                <li class="flex items-center gap-3"><span class="text-indigo-500 text-xl">📶</span> High-speed Wi-Fi</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Booking & Navigation -->
+          <div class="mt-14 flex flex-col md:flex-row justify-center gap-6">
+            <a href="/" 
+               class="px-10 py-4 text-lg font-semibold rounded-xl shadow-md text-white bg-gradient-to-r from-indigo-500 via-pink-500 to-rose-500 hover:from-rose-500 hover:to-indigo-500 transition-all duration-300 text-center">
+              ← Back to Homes
+            </a>
+            <form action="/favourites" method="POST">
+            <input type="hidden" name="id" value="<%= home.id %>">
+            <button 
+              class="px-10 py-4 text-lg font-semibold rounded-xl shadow-md bg-gradient-to-r from-green-400 to-emerald-600 hover:from-emerald-500 hover:to-green-500 text-white transition-all duration-300">
+              🏡 Add To Favourite
+            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
